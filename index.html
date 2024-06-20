@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Div that wraps main content -->
+    <div id="container">
+        <h1>Recipe Manager</h1>
+        <div>
+            <input id="recipe-name" placeholder="Recipe Name...">
+            <input id="recipe-description" placeholder="Write your delicious recipe...">
+            <select name="recipe-category" id="recipe-category">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+            <button id="recipe-add" title="Press here to add the recipe.">Add Recipe</button>
+        </div>
+    </div>
+
+    <!-- Div that wraps the filter section -->
+    <div class="recipe-filter">
+        <input id="search-recipe" placeholder="Search for ...">
+        <button id="btnShowAll">Show all</button>
+        <button id="btnShowFavorite">Show favorite</button>
+        <button id="btnSortByCategory">Sort by Category</button>
+    </div>
+
+    <!-- Div that wraps the report section -->
+    <div class="recipe-report">
+        <button id="btnGenerateReport">Generate Report</button>
+        <div id="displayReport">
+        </div>
+    </div>
+
+    <!-- Div that displays the recipe list -->
+    <div class="recipe-list">
+        <ul id="recipe"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
