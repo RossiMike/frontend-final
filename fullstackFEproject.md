@@ -351,5 +351,3 @@ For students looking for an extra challenge, add a search functionality to the R
 
 5. **Clear the Search Field:**
    - After displaying the search results, clear the search input field by setting its value to an empty string.
-   
-   lll
