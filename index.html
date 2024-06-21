@@ -10,9 +10,9 @@
 
 <body>
     <!-- Div that wraps main content -->
-    <div id="container">
+    <div class="container">
         <h1>Recipe Manager</h1>
-        <div>
+        <div class="main">
             <input id="recipe-name" placeholder="Recipe Name...">
             <input id="recipe-description" placeholder="Write your delicious recipe...">
             <select name="recipe-category" id="recipe-category">
@@ -22,7 +22,7 @@
             </select>
             <button id="recipe-add" title="Press here to add the recipe.">Add Recipe</button>
         </div>
-    </div>
+
 
     <!-- Div that wraps the filter section -->
     <div class="recipe-filter">
@@ -43,6 +43,9 @@
     <div class="recipe-list">
         <ul id="recipe"></ul>
     </div>
+</div>
+
+
 
     <script src="./script.js"></script>
 </body>

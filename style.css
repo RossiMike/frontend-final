@@ -1,24 +1,33 @@
+body{
+    background-color: #f4f4f4;
+
+}
 .container {
     max-width: 800px;
     margin: 10px auto;
-    background: #fff;
+    background-color: orange;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+}
 
+.main{
+    display: flex;
 }
 
 h1 {
     text-align: center;
-    color: #4d4444;
+    font-size: 50px;
+    color: #db6b2e;
 }
 
 #recipe-name {
-    width: 10%;
+    width: 15%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color: #ddd;
 }
 
 #recipe-description {
@@ -27,6 +36,15 @@ h1 {
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    background-color: #ddd;
+}
+
+#recipe-name:focus,
+#recipe-description:focus{
+    width:100%;
+    background-color: white;
+    border-color: #ddd;
+
 }
 
 #recipe-add {
@@ -55,20 +73,29 @@ h1 {
     margin-bottom: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
-.recipe-list li.isFavorite {
-    text-decoration: line-through;
-    background-color: #45c663;
+.recipe-list li:nth-child(even){
+    background-color: lightblue;
+  }
+  
+.recipe-list li:hover{
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.recipe-list button{
+    margin-left: 15px;
+    float:right;
+}
 
 .recipe-list button,
 .recipe-report button,
-.recipe-filter button {
+.recipe-filter button ,
+.main button{
     background-color: #11bc20;
     color: white;
     border: none;
@@ -79,9 +106,11 @@ h1 {
 
 .recipe-list button:hover,
 .recipe-report button:hover,
-.recipe-filter button {
+.recipe-filter button:hover,
+.main button:hover {
     background-color: #049710;
 }
+
 
 .recipe-report {
     margin: 5px;
